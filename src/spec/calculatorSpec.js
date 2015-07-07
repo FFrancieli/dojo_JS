@@ -14,3 +14,20 @@ describe("Calculates Maximum", function(){
 		expect(max).toBe(-4);
 	});
 });
+
+describe("Calculates Minimum", function(){
+	it("should return 0 as minimum", function(){
+		var min = minimum([1,45,0,87])
+		expect(min).toBe(0);
+	});
+
+	it("should return -99 as minimum", function(){
+		var min = minimum([-3, 0, 10, -99])
+		expect(min).toBe(-99);
+	});
+
+	it("should return - as minimum", function(){
+		var min = minimum([-26,-90,-4])
+		expect(min).toBe(-90);
+	});
+});
