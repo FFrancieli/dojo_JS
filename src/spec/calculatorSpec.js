@@ -26,8 +26,20 @@ describe("Calculates Minimum", function(){
 		expect(min).toBe(-99);
 	});
 
-	it("should return - as minimum", function(){
+	it("should return -90 as minimum", function(){
 		var min = minimum([-26,-90,-4])
 		expect(min).toBe(-90);
+	});
+});
+
+describe("Calculates Average", function(){
+	it("should return 1", function(){
+		var avg = average([1, 0, 2])
+		expect(avg).toBe(1);
+	});
+
+	it("should return 4", function(){
+		var avg = average([-3, 9, 3, 7])
+		expect(avg).toBe(4);
 	});
 });
